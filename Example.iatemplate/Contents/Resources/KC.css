@@ -1,82 +1,170 @@
 /* ============================================================
-   DARK MODE  —  html.night-mode  (iA Writer's actual night class)
-   Palette: dark charcoal bg · warm off-white text · steel blue accents
+   iA Writer Template: KC
+   Matches formatting from K
    ============================================================ */
 
+/* --- Page & Base --- */
+/* Might have html and body mixed up */
+@page {
+  margin: 0.85in 1.0in 0.85in 1.0in;
+}
+
 html.night-mode {
+  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.4;
   color: #dedad4;
   background: #1c1c1e;
 }
 
+html.night-mode .markdown-body {
+  max-width: 100%;
+  color-scheme: dark;
+}
+
 /* --- Name (H1) --- */
 html.night-mode .markdown-body h1 {
+  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 26pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
   color: #f0ede6;
+  margin: 0 0 4px 0;
+  padding: 0;
+  border: none;
+  text-transform: none;
 }
 
-/* --- Contact subtitle --- */
+/* --- Contact / Subtitle line (H6 or italic paragraph under H1) --- */
 html.night-mode .markdown-body h1 + p,
 html.night-mode .markdown-body h1 + p em {
+  text-align: center;
+  font-size: 9pt;
   color: #6e6e73;
+  margin: 0 0 24px 0;
+  font-style: normal;
 }
 
-/* --- Section Headers (H2) --- */
+/* --- Section Headers (H2: SKILLS, EXPERIENCE, etc.) --- */
 html.night-mode .markdown-body h2 {
+  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #6aabdf;
-  border-bottom-color: #3a5a78;
+  margin: 20px 0 2px 0;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid #3a5a78;
 }
 
-/* --- Job Title (H3) --- */
+/* --- Job Title / Role line (H3) --- */
 html.night-mode .markdown-body h3 {
+  font-size: 10pt;
+  font-weight: 700;
   color: #dedad4;
+  margin: 10px 0 2px 0;
+  border: none;
 }
 
 /* --- Company + Date subtitle (H4) --- */
 html.night-mode .markdown-body h4 {
+  font-size: 9.5pt;
+  font-weight: 400;
+  font-style: italic;
   color: #7a9ab8;
+  margin: 0 0 4px 0;
+  border: none;
 }
 
-/* --- Sub-section labels (H5) --- */
+/* --- Sub-section labels (H5: Education degree, Cert names) --- */
 html.night-mode .markdown-body h5 {
+  font-size: 10pt;
+  font-weight: 700;
   color: #dedad4;
+  margin: 6px 0 2px 0;
+  border: none;
+  display: inline;
 }
 
 /* --- Body paragraphs --- */
 html.night-mode .markdown-body p {
+  margin: 2px 0 6px 0;
+  font-size: 10pt;
   color: #dedad4;
 }
 
-/* --- Bullet list items --- */
+/* --- Bullet lists --- */
+html.night-mode .markdown-body ul {
+  margin: 2px 0 8px 0;
+  padding-left: 18px;
+}
+
 html.night-mode .markdown-body ul li {
-  color: #dedad4;
+  font-size: 10pt;
+  margin-bottom: 5px;
+  line-height: 1.4;
+  list-style-type: disc;
 }
 
-/* Bold lead-in in bullets */
+/* Bold lead-in phrase in bullet (strong) */
 html.night-mode .markdown-body ul li strong {
+  font-weight: 700;
   color: #dedad4;
 }
 
-/* --- Bold labels (skills categories) --- */
+/* --- Skills section: bold blue category labels --- */
+/* In iA Writer, use **Category:** syntax for bold; 
+   we style strong inside paragraphs under #skills-like sections */
 html.night-mode .markdown-body h2 + p strong,
 html.night-mode .markdown-body p strong {
+  font-weight: 700;
   color: #6aabdf;
 }
 
-/* --- Italic text --- */
+/* --- Italic text (dates, locations) --- */
 html.night-mode .markdown-body em {
+  font-style: italic;
   color: #7a9ab8;
 }
 
-/* --- Horizontal rule --- */
+/* --- Separator / horizontal rule --- */
 html.night-mode .markdown-body hr {
-  border-top-color: #3a3a3c;
+  border: none;
+  border-top: 1px solid #3a3a3c;
+  margin: 12px 0;
 }
 
 /* --- Links --- */
 html.night-mode .markdown-body a {
   color: #6aabdf;
+  text-decoration: none;
 }
 
-/* --- Blockquote --- */
+html.night-mode .markdown-body a:hover {
+  text-decoration: underline;
+}
+
+/* --- Blockquote (for contact info alternative styling) --- */
 html.night-mode .markdown-body blockquote {
+  text-align: center;
+  font-size: 9pt;
   color: #6e6e73;
+  border: none;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+/* --- Print / Export --- */
+@media print {
+  body {
+    font-size: 10pt;
+  }
+  h2 {
+    page-break-after: avoid;
+  }
+  h3 {
+    page-break-after: avoid;
+  }
 }
