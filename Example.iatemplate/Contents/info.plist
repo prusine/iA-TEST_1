@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>com.custom.kaylyn-pug-resume</string>
+  <key>CFBundleName</key>
+  <string>Kaylyn Pug Resume</string>
+  <key>CFBundleVersion</key>
+  <string>1.0</string>
+  <key>IATemplateDescription</key>
+  <string>Clean professional resume style matching the Kaylyn Pug resume — centered name header, steel blue section headers with rule, italic date accents, bold category labels, and bullet-point experience entries.</string>
+  <key>IATemplateType</key>
+  <string>document</string>
+  <key>IATemplateFontName</key>
+  <string>Calibri</string>
+  <key>IATemplateFontSize</key>
+  <real>10</real>
+</dict>
+</plist>
