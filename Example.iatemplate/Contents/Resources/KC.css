@@ -1,162 +1,90 @@
-/* ============================================================
-   iA Writer Template: KC
-   Matches formatting from K
+============================================================
+   DARK MODE  —  html.night  (iA Writer's actual night class)
+   Palette: dark charcoal bg · warm off-white text · steel blue accents
    ============================================================ */
 
-/* --- Page & Base --- */
-/* Might have html and body mixed up */
-@page {
-  margin: 0.85in 1.0in 0.85in 1.0in;
-}
-
-html.night-mode {
-  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 10pt;
-  line-height: 1.4;
-  color: #c9d1d9;
-  background-color: #0d1117;
-}
-
-html.night-mode .markdown-body {
-  max-width: 100%;
-  color-scheme: dark;
+html.night {
+  color: #dedad4;
+  background: #1c1c1e;
 }
 
 /* --- Name (H1) --- */
-html.night-mode .markdown-body h1 {
-  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 26pt;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-align: center;
- /* color: #111111;*/
-  margin: 0 0 4px 0;
-  padding: 0;
-  border: none;
-  text-transform: none;
+html.night .markdown-body h1 {
+  color: #f0ede6;
 }
 
-/* --- Contact / Subtitle line (H6 or italic paragraph under H1) --- */
-html.night-mode .markdown-body h1 + p,
-html.night-mode .markdown-body h1 + p em {
-  text-align: center;
-  font-size: 9pt;
-/*  color: #888888;*/
-  margin: 0 0 24px 0;
-  font-style: normal;
+/* --- Contact subtitle --- */
+html.night .markdown-body h1 + p,
+html.night .markdown-body h1 + p em {
+  color: #6e6e73;
 }
 
-/* --- Section Headers (H2: SKILLS, EXPERIENCE, etc.) --- */
-html.night-mode .markdown-body h2 {
-  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 10pt;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
- /* color: #2E6DA4;*/
-  margin: 20px 0 2px 0;
-  padding-bottom: 3px;
-  border-bottom: 1.5px solid #2E6DA4;
+/* --- Section Headers (H2) --- */
+html.night .markdown-body h2 {
+  color: #6aabdf;
+  border-bottom-color: #3a5a78;
 }
 
-/* --- Job Title / Role line (H3) --- */
-html.night-mode .markdown-body h3 {
-  font-size: 10pt;
-  font-weight: 700;
-/*  color: #1a1a1a;*/
-  margin: 10px 0 2px 0;
-  border: none;
+/* --- Job Title (H3) --- */
+html.night .markdown-body h3 {
+  color: #dedad4;
 }
 
 /* --- Company + Date subtitle (H4) --- */
-html.night-mode .markdown-body h4 {
-  font-size: 9.5pt;
-  font-weight: 400;
-  font-style: italic;
- /* color: #5a7fa8;*/
-  margin: 0 0 4px 0;
-  border: none;
+html.night .markdown-body h4 {
+  color: #7a9ab8;
 }
 
-/* --- Sub-section labels (H5: Education degree, Cert names) --- */
-html.night-mode .markdown-body h5 {
-  font-size: 10pt;
-  font-weight: 700;
- /* color: #1a1a1a;*/
-  margin: 6px 0 2px 0;
-  border: none;
-  display: inline;
+/* --- Sub-section labels (H5) --- */
+html.night .markdown-body h5 {
+  color: #dedad4;
 }
 
 /* --- Body paragraphs --- */
-html.night-mode .markdown-body p {
-  margin: 2px 0 6px 0;
-  font-size: 10pt;
- /* color: #1a1a1a;*/
+html.night .markdown-body p {
+  color: #dedad4;
 }
 
-/* --- Bullet lists --- */
-html.night-mode .markdown-body ul {
-  margin: 2px 0 8px 0;
-  padding-left: 18px;
+/* --- Bullet list items --- */
+html.night .markdown-body ul li {
+  color: #dedad4;
 }
 
-html.night-mode .markdown-body ul li {
-  font-size: 10pt;
-  margin-bottom: 5px;
-  line-height: 1.4;
-  list-style-type: disc;
+/* Bold lead-in in bullets */
+html.night .markdown-body ul li strong {
+  color: #dedad4;
 }
 
-/* Bold lead-in phrase in bullet (strong) */
-html.night-mode .markdown-body ul li strong {
-  font-weight: 700;
-  /*color: #1a1a1a;*/
+/* --- Bold labels (skills categories) --- */
+html.night .markdown-body h2 + p strong,
+html.night .markdown-body p strong {
+  color: #6aabdf;
 }
 
-/* --- Skills section: bold blue category labels --- */
-/* In iA Writer, use **Category:** syntax for bold; 
-   we style strong inside paragraphs under #skills-like sections */
-html.night-mode .markdown-body h2 + p strong,
-html.night-mode .markdown-body p strong {
-  font-weight: 700;
-/*  color: #2E6DA4;*/
+/* --- Italic text --- */
+html.night .markdown-body em {
+  color: #7a9ab8;
 }
 
-/* --- Italic text (dates, locations) --- */
-html.night-mode .markdown-body em {
-  font-style: italic;
-  /*color: #5a7fa8;*/
-}
-
-/* --- Separator / horizontal rule --- */
-html.night-mode .markdown-body hr {
-  border: none;
-  border-top: 1px solid #cccccc;
-  margin: 12px 0;
+/* --- Horizontal rule --- */
+html.night .markdown-body hr {
+  border-top-color: #3a3a3c;
 }
 
 /* --- Links --- */
-html.night-mode .markdown-body a {
-  color: #2E6DA4;
-  text-decoration: none;
+html.night .markdown-body a {
+  color: #6aabdf;
 }
 
-html.night-mode .markdown-body a:hover {
-  text-decoration: underline;
+/* --- Blockquote --- */
+html.night .markdown-body blockquote {
+  color: #6e6e73;
 }
 
-/* --- Blockquote (for contact info alternative styling) --- */
-html.night-mode .markdown-body blockquote {
-  text-align: center;
-  font-size: 9pt;
-  color: #888888;
-  border: none;
-  margin: 0 0 16px 0;
-  padding: 0;
-}
 
-/* --- Print / Export --- */
+/* ============================================================
+   Print / PDF Export
+   ============================================================ */
 @media print {
   body {
     font-size: 10pt;
