@@ -1,30 +1,29 @@
 /* ============================================================
    iA Writer Template: KC
-   Matches formatting from K
+   Light mode: default (no class)
+   Dark mode:  html.night  ← iA Writer's actual night class
    ============================================================ */
 
 /* --- Page & Base --- */
-/* Might have html and body mixed up */
 @page {
   margin: 0.85in 1.0in 0.85in 1.0in;
 }
 
-html:not(.night-mode) {
-  font-family: "Source Sans 3", "Brandon Grotesque", "iA Writer Duo", "iA Writer Mono";
-  font-size: 9.5pt;
-  font-weight: 300;
+html {
+  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
   line-height: 1.4;
   color: #1a1a1a;
   background: #ffffff;
 }
 
-html:not(.night-mode) .markdown-body {
+.markdown-body {
   max-width: 100%;
 }
 
 /* --- Name (H1) --- */
-html:not(.night-mode) .markdown-body h1 {
-  font-family: "iA Writer Duo";
+.markdown-body h1 {
+  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 26pt;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -36,9 +35,9 @@ html:not(.night-mode) .markdown-body h1 {
   text-transform: none;
 }
 
-/* --- Contact / Subtitle line (H6 or italic paragraph under H1) --- */
-html:not(.night-mode) .markdown-body h1 + p,
-html:not(.night-mode) .markdown-body h1 + p em {
+/* --- Contact / Subtitle line (paragraph immediately after H1) --- */
+.markdown-body h1 + p,
+.markdown-body h1 + p em {
   text-align: center;
   font-size: 9pt;
   color: #888888;
@@ -47,8 +46,8 @@ html:not(.night-mode) .markdown-body h1 + p em {
 }
 
 /* --- Section Headers (H2: SKILLS, EXPERIENCE, etc.) --- */
-html:not(.night-mode) .markdown-body h2 {
-  font-family: "iA Writer Duo";
+.markdown-body h2 {
+  font-family: "Calibri", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 10pt;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -60,7 +59,7 @@ html:not(.night-mode) .markdown-body h2 {
 }
 
 /* --- Job Title / Role line (H3) --- */
-html:not(.night-mode) .markdown-body h3 {
+.markdown-body h3 {
   font-size: 10pt;
   font-weight: 700;
   color: #1a1a1a;
@@ -69,7 +68,7 @@ html:not(.night-mode) .markdown-body h3 {
 }
 
 /* --- Company + Date subtitle (H4) --- */
-html:not(.night-mode) .markdown-body h4 {
+.markdown-body h4 {
   font-size: 9.5pt;
   font-weight: 400;
   font-style: italic;
@@ -79,7 +78,7 @@ html:not(.night-mode) .markdown-body h4 {
 }
 
 /* --- Sub-section labels (H5: Education degree, Cert names) --- */
-html:not(.night-mode) .markdown-body h5 {
+.markdown-body h5 {
   font-size: 10pt;
   font-weight: 700;
   color: #1a1a1a;
@@ -89,65 +88,63 @@ html:not(.night-mode) .markdown-body h5 {
 }
 
 /* --- Body paragraphs --- */
-html:not(.night-mode) .markdown-body p {
+.markdown-body p {
   margin: 2px 0 6px 0;
   font-size: 10pt;
   color: #1a1a1a;
 }
 
 /* --- Bullet lists --- */
-html:not(.night-mode) .markdown-body ul {
+.markdown-body ul {
   margin: 2px 0 8px 0;
   padding-left: 18px;
 }
 
-html:not(.night-mode) .markdown-body ul li {
+.markdown-body ul li {
   font-size: 10pt;
   margin-bottom: 5px;
   line-height: 1.4;
   list-style-type: disc;
 }
 
-/* Bold lead-in phrase in bullet (strong) */
-html:not(.night-mode) .markdown-body ul li strong {
+/* Bold lead-in phrase in bullet */
+.markdown-body ul li strong {
   font-weight: 700;
   color: #1a1a1a;
 }
 
-/* --- Skills section: bold blue category labels --- */
-/* In iA Writer, use **Category:** syntax for bold; 
-   we style strong inside paragraphs under #skills-like sections */
-html:not(.night-mode) .markdown-body h2 + p strong,
-html:not(.night-mode) .markdown-body p strong {
+/* --- Skills: bold blue category labels --- */
+.markdown-body h2 + p strong,
+.markdown-body p strong {
   font-weight: 700;
   color: #2E6DA4;
 }
 
 /* --- Italic text (dates, locations) --- */
-html:not(.night-mode) .markdown-body em {
+.markdown-body em {
   font-style: italic;
   color: #5a7fa8;
 }
 
-/* --- Separator / horizontal rule --- */
-html:not(.night-mode) .markdown-body hr {
+/* --- Horizontal rule --- */
+.markdown-body hr {
   border: none;
   border-top: 1px solid #cccccc;
   margin: 12px 0;
 }
 
 /* --- Links --- */
-html:not(.night-mode) .markdown-body a {
+.markdown-body a {
   color: #2E6DA4;
   text-decoration: none;
 }
 
-html:not(.night-mode) .markdown-body a:hover {
+.markdown-body a:hover {
   text-decoration: underline;
 }
 
-/* --- Blockquote (for contact info alternative styling) --- */
-html:not(.night-mode) .markdown-body blockquote {
+/* --- Blockquote (contact info alternative) --- */
+.markdown-body blockquote {
   text-align: center;
   font-size: 9pt;
   color: #888888;
@@ -158,165 +155,92 @@ html:not(.night-mode) .markdown-body blockquote {
 
 
 /* ============================================================
-   iA Writer Template: KC
-   Matches formatting from K
+   DARK MODE  —  html.night  (iA Writer's actual night class)
+   Palette: dark charcoal bg · warm off-white text · steel blue accents
    ============================================================ */
 
-/* --- Page & Base --- */
-/* Might have html and body mixed up */
-@page {
-  margin: 0.85in 1.0in 0.85in 1.0in;
-}
-
-html.night-mode {
-  font-family: "Source Sans 3", "Brandon Grotesque", "iA Writer Duo", "iA Writer Mono";
-  font-size: 10pt;
-  line-height: 1.4;
-  font-weight: 300;
+html.night {
   color: #dedad4;
   background: #1c1c1e;
 }
 
-html.night-mode .markdown-body {
-  max-width: 100%;
-  color-scheme: dark;
-}
-
 /* --- Name (H1) --- */
-html.night-mode .markdown-body h1 {
-  font-family: "iA Writer Duo";
-  font-size: 26pt;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #6aabdf;
-  margin: 0 0 4px 0;
-  padding: 0;
-  border: none;
-  text-transform: none;
+html.night .markdown-body h1 {
+  color: #f0ede6;
 }
 
-/* --- Contact / Subtitle line (H6 or italic paragraph under H1) --- */
-html.night-mode .markdown-body h1 + p,
-html.night-mode .markdown-body h1 + p em {
-  text-align: center;
-  font-size: 9pt;
+/* --- Contact subtitle --- */
+html.night .markdown-body h1 + p,
+html.night .markdown-body h1 + p em {
   color: #6e6e73;
-  margin: 0 0 24px 0;
-  font-style: normal;
 }
 
-/* --- Section Headers (H2: SKILLS, EXPERIENCE, etc.) --- */
-html.night-mode .markdown-body h2 {
-  font-family: "iA Writer Duo";
-  font-size: 10pt;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+/* --- Section Headers (H2) --- */
+html.night .markdown-body h2 {
   color: #6aabdf;
-  margin: 20px 0 2px 0;
-  padding-bottom: 3px;
-  border-bottom: 1.5px solid #3a5a78;
+  border-bottom-color: #3a5a78;
 }
 
-/* --- Job Title / Role line (H3) --- */
-html.night-mode .markdown-body h3 {
-  font-size: 10pt;
-  font-weight: 700;
+/* --- Job Title (H3) --- */
+html.night .markdown-body h3 {
   color: #dedad4;
-  margin: 10px 0 2px 0;
-  border: none;
 }
 
 /* --- Company + Date subtitle (H4) --- */
-html.night-mode .markdown-body h4 {
-  font-size: 9.5pt;
-  font-weight: 400;
-  font-style: italic;
+html.night .markdown-body h4 {
   color: #7a9ab8;
-  margin: 0 0 4px 0;
-  border: none;
 }
 
-/* --- Sub-section labels (H5: Education degree, Cert names) --- */
-html.night-mode .markdown-body h5 {
-  font-size: 10pt;
-  font-weight: 700;
+/* --- Sub-section labels (H5) --- */
+html.night .markdown-body h5 {
   color: #dedad4;
-  margin: 6px 0 2px 0;
-  border: none;
-  display: inline;
 }
 
 /* --- Body paragraphs --- */
-html.night-mode .markdown-body p {
-  margin: 2px 0 6px 0;
-  font-size: 10pt;
+html.night .markdown-body p {
   color: #dedad4;
 }
 
-/* --- Bullet lists --- */
-html.night-mode .markdown-body ul {
-  margin: 2px 0 8px 0;
-  padding-left: 18px;
-}
-
-html.night-mode .markdown-body ul li {
-  font-size: 10pt;
-  margin-bottom: 5px;
-  line-height: 1.4;
-  list-style-type: disc;
-}
-
-/* Bold lead-in phrase in bullet (strong) */
-html.night-mode .markdown-body ul li strong {
-  font-weight: 700;
+/* --- Bullet list items --- */
+html.night .markdown-body ul li {
   color: #dedad4;
 }
 
-/* --- Skills section: bold blue category labels --- */
-/* In iA Writer, use **Category:** syntax for bold; 
-   we style strong inside paragraphs under #skills-like sections */
-html.night-mode .markdown-body h2 + p strong,
-html.night-mode .markdown-body p strong {
-  font-weight: 700;
+/* Bold lead-in in bullets */
+html.night .markdown-body ul li strong {
+  color: #dedad4;
+}
+
+/* --- Bold labels (skills categories) --- */
+html.night .markdown-body h2 + p strong,
+html.night .markdown-body p strong {
   color: #6aabdf;
 }
 
-/* --- Italic text (dates, locations) --- */
-html.night-mode .markdown-body em {
-  font-style: italic;
+/* --- Italic text --- */
+html.night .markdown-body em {
   color: #7a9ab8;
 }
 
-/* --- Separator / horizontal rule --- */
-html.night-mode .markdown-body hr {
-  border: none;
-  border-top: 1px solid #3a3a3c;
-  margin: 12px 0;
+/* --- Horizontal rule --- */
+html.night .markdown-body hr {
+  border-top-color: #3a3a3c;
 }
 
 /* --- Links --- */
-html.night-mode .markdown-body a {
+html.night .markdown-body a {
   color: #6aabdf;
-  text-decoration: none;
 }
 
-html.night-mode .markdown-body a:hover {
-  text-decoration: underline;
-}
-
-/* --- Blockquote (for contact info alternative styling) --- */
-html.night-mode .markdown-body blockquote {
-  text-align: center;
-  font-size: 9pt;
+/* --- Blockquote --- */
+html.night .markdown-body blockquote {
   color: #6e6e73;
-  border: none;
-  margin: 0 0 16px 0;
-  padding: 0;
 }
 
-/* --- Print / Export --- */
+
+/* ============================================================
+   Print / PDF Export
+   ============================================================ */
 @media print {
   body {
     font-size: 10pt;
