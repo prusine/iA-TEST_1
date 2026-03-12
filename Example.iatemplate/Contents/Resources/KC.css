@@ -73,7 +73,7 @@ html:not(.night-mode) .markdown-body h4 {
   font-size: 9.5pt;
   font-weight: 400;
   font-style: italic;
-  color: #5a7fa8;
+  color: #a891bf;
   margin: 0 0 4px 0;
   border: none;
 }
@@ -126,7 +126,7 @@ html:not(.night-mode) .markdown-body p strong {
 /* --- Italic text (dates, locations) --- */
 html:not(.night-mode) .markdown-body em {
   font-style: italic;
-  color: #5a7fa8;
+  color: #a891bf;
 }
 
 /* --- Separator / horizontal rule --- */
@@ -189,7 +189,7 @@ html.night-mode .markdown-body h1 {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #6aabdf;
+  color: #6a70df;
   margin: 0 0 4px 0;
   padding: 0;
   border: none;
@@ -213,10 +213,10 @@ html.night-mode .markdown-body h2 {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #6aabdf;
+  color: #6a70df;
   margin: 20px 0 2px 0;
   padding-bottom: 3px;
-  border-bottom: 1.5px solid #3a5a78;
+  border-bottom: 1.5px solid #3a3b78;
 }
 
 /* --- Job Title / Role line (H3) --- */
@@ -233,7 +233,7 @@ html.night-mode .markdown-body h4 {
   font-size: 9.5pt;
   font-weight: 400;
   font-style: italic;
-  color: #7a9ab8;
+  color: #7a7bb8;
   margin: 0 0 4px 0;
   border: none;
 }
@@ -280,13 +280,13 @@ html.night-mode .markdown-body ul li strong {
 html.night-mode .markdown-body h2 + p strong,
 html.night-mode .markdown-body p strong {
   font-weight: 700;
-  color: #6aabdf;
+  color: #6a70df;
 }
 
 /* --- Italic text (dates, locations) --- */
 html.night-mode .markdown-body em {
   font-style: italic;
-  color: #7a9ab8;
+  color: #7a7bb8;
 }
 
 /* --- Separator / horizontal rule --- */
@@ -298,7 +298,7 @@ html.night-mode .markdown-body hr {
 
 /* --- Links --- */
 html.night-mode .markdown-body a {
-  color: #6aabdf;
+  color: #6a70df;
   text-decoration: none;
 }
 
