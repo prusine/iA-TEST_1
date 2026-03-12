@@ -52,10 +52,10 @@ html {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #2E6DA4;
+  color: #6e5494;
   margin: 20px 0 2px 0;
   padding-bottom: 3px;
-  border-bottom: 1.5px solid #2E6DA4;
+  border-bottom: 1.5px solid #6e5494;
 }
 
 /* --- Job Title / Role line (H3) --- */
@@ -117,7 +117,7 @@ html {
 .markdown-body h2 + p strong,
 .markdown-body p strong {
   font-weight: 700;
-  color: #2E6DA4;
+  color: #6e5494;
 }
 
 /* --- Italic text (dates, locations) --- */
@@ -177,7 +177,7 @@ html.night .markdown-body h1 + p em {
 
 /* --- Section Headers (H2) --- */
 html.night .markdown-body h2 {
-  color: #6aabdf;
+  color: #6e5494;
   border-bottom-color: #3a5a78;
 }
 
